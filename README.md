@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wholesale Project
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+This is a **Wholesale Web Application** built with **Next.js, TypeScript, Tailwind CSS, and Redux**. It allows users to manage wholesale orders, addresses, payment methods, and account details.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Backend**: Node.js, Express.js, MySQL
+- **Authentication**: JWT
+
+
+## 📂 Project Structure
+
+```
+wholesale-project/
+│-- app/                   # Main application files
+│-- components/            # Reusable UI components
+│-- public/                # Static assets
+│-- store/                 # Redux store
+│-- helpers/               # Utility functions
+│-- types/                 # TypeScript types
+│-- pages/                 # Next.js pages
+│-- styles/                # Global styles
+│-- .gitignore             # Git ignore file
+│-- package.json           # Project dependencies
+│-- README.md              # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1️⃣ Clone the Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+git clone https://github.com/kulbirdhiman/whole-sale.git
+```
 
-## Learn More
+### 2️⃣ Navigate to the Project Directory
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+cd whole-sale
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3️⃣ Install Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm install  # or yarn install
+```
 
-## Deploy on Vercel
+### 4️⃣ Start the Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run dev  # or yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app will be running at [**http://localhost:3000**](http://localhost:3000)
+
+## 📌 Features
+
+- 📦 **Order Management**
+- 🏠 **Address Management**
+- 💳 **Payment Methods**
+- 👤 **User Account Management**
+- 🔐 **Secure Authentication**
+
+## 📤 Deployment
+
+To deploy the application, use:
+
+```sh
+npm run build  # Build for production
+npm start      # Start production server
+```
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+Feel free to update this README as needed! 🚀
+
