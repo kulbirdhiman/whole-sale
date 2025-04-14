@@ -67,9 +67,7 @@ const SideBar: React.FC<SideBarProps> = ({ showSideBar,list }) => {
 
   const handleClearFilters = () => {
     setSelectedDepartment(null);
-    const params = new URLSearchParams();
- 
-    router.push(`${pathname}?${params.toString()}`);
+    router.push("/products"); // Navigate to only products page
   };
 
   const filteredDepartments = departments ;
@@ -152,18 +150,18 @@ const SideBar: React.FC<SideBarProps> = ({ showSideBar,list }) => {
 
         {/* Department List */}
         <ul className="space-y-2">
-          <motion.li
+        <motion.li
             whileTap={{ scale: 0.9 }}
             className="flex border hover:scale-110 items-center gap-3 cursor-pointer hover:bg-gray-50 rounded-lg p-2"
             onClick={handleClearFilters}
           >
             <input
-              type="checkbox"
-              checked={selectedDepartment === ""}
+              type="radio"
+              checked={!selectedDepartment}
               onChange={handleClearFilters}
               className="w-4 h-4 accent-blue-500 cursor-pointer"
             />
-            <span className={`text-sm ${selectedDepartment === "" ? "font-medium text-blue-600" : "text-gray-800"}`}>
+            <span className={`text-sm ${!selectedDepartment ? "font-medium text-blue-600" : "text-gray-800"}`}>
               All
             </span>
           </motion.li>
@@ -177,7 +175,7 @@ const SideBar: React.FC<SideBarProps> = ({ showSideBar,list }) => {
                 onClick={() => handleDepartmentClick(department.slug)}
               >
                 <input
-                  type="checkbox"
+                  type="radio"
                   checked={selectedDepartment === department.slug}
                   onChange={() => handleDepartmentClick(department.slug)}
                   className="w-4 h-4 accent-blue-500 cursor-pointer"
