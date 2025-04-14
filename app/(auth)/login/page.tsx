@@ -3,7 +3,7 @@ import Login from '@/components/auth/Login'
 const page = () => {
   return (
     <div className='flex justify-center items-center h-[70vh]' >
-<Login />
+      <Login />
     </div>
   )
 }

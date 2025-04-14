@@ -65,7 +65,7 @@ export default function Register() {
           </div>
         </form>
         <p className="text-black mt-2 text-center">
-          Don't have an account? <Link className="text-blue-500" href="/register">Register</Link>
+          Don't have an account? <Link className="text-blue-500" href="/signup">Register</Link>
         </p>
       </div>
     </div>

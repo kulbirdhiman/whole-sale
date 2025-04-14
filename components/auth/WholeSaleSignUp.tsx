@@ -91,7 +91,7 @@ const WholeSaleSignUp: React.FC = () => {
         <div className="flex justify-between mt-4">
           <p className="text-sm">
             Already have an account? {" "}
-            <span onClick={() => router.push("/sign-in")} className="text-blue-600 font-semibold cursor-pointer">
+            <span onClick={() => router.push("/login")} className="text-blue-600 font-semibold cursor-pointer">
               Sign In
             </span>
           </p>
